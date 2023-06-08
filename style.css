@@ -1,0 +1,406 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Kyu: Home Page CSS Start */
+.nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.navbar{
+    text-align: center;
+    position: fixed;
+    margin-top: 190vh;
+    background-color: #000000b3;
+    border-radius: 30px;
+    padding: 1px;
+    width: 40%;
+    animation: nav 1s;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    color: #fff;
+    transition: all 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+.navbar img{
+    margin-top: -34px;
+    margin-left: -20px;
+}
+.contain{
+    padding: 10px;
+}
+.navbar a:hover{
+    background-color: #06000092;
+    border-radius: 10px;
+}
+.navImg{
+    animation: navhead 3s infinite ease-in-out;
+    position: absolute;
+}
+@keyframes nav {
+    0%{
+    margin-top: 205vh;
+    opacity: 0;
+    }
+}
+@keyframes navhead {
+    0%{
+        margin-top: -32px;
+    }
+    50%{
+        margin-top: -42px;
+    }
+    70%{
+        margin-top: -32px;
+    }
+    80%{
+        margin-top: -42px;
+    }
+}
+                                                                            /* Kyu: Pop Up Start */
+.popup{
+    border: 1px solid red;
+    height: 95vh;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+    padding-right: 1%;
+    align-items: center;
+    text-align: center;
+    animation: popup 5s;
+    z-index: 1;
+    background-image: url('imgs/Greeting.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    display: none;
+}
+@keyframes popup {
+    0%{
+        height: 1%;
+        opacity: 50%;
+    }
+}
+.popup-text{
+    position: relative;
+    border: 3px ridge black;
+    /* box-shadow: 2px  2px 50px rgba(250, 146, 43, 0.427); */
+    background-color: rgb(244, 162, 132);
+    padding: 60px;
+    height: 230px;
+    width: 400px;
+    font-size: 40px;
+    color: white;
+    animation: popupname 3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes popupname {
+    0%{
+        height: 0%;
+        color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        color: rgba(0, 0, 0, 0);
+    }
+    0%{
+        color: rgba(0, 0, 0, 0);
+    }
+}
+                                                                /* Kyu: Pop Up End */
+section{
+    height: 100vh;
+}
+.head-flex{
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    height: 100vh;
+    width: 100%;
+    background-image: url('imgs/Happy\ 4th\ of\ July\ weekend!.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    
+    padding: 25px;
+}
+.head-one{
+    padding-left: 20px;
+    padding-top: 15vh;
+    width: 80%;
+    animation: headone 1s;
+}
+.head-one h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.UAA{
+    color: rgba(0, 0, 0, 0.745);
+    transition: all 1s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head-one p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-two{
+    padding-top: 22vh;
+    width: 35%;
+    font-size: 20px;
+    padding-left: 40px;
+    animation: headtwo 1s;
+}
+.head-two img{
+    width: 190px;
+    height: 180px;
+    padding: 4px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.163);
+}
+@keyframes headone {
+    0%{
+    margin-left: -27px;
+    opacity: 0%;
+    color: white;
+    }
+}
+@keyframes headtwo {
+    0%{
+    margin-left: 700px;
+    opacity: 0;
+    color: white;
+    }
+}
+article{
+    height: 100%;
+    display: flex;
+}
+.article-text{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+.article-text h3{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.article-text p{
+    font-size: 20px;
+}
+.article-text button{
+    margin-top: 15px;
+    width: 25%;
+    height: 10%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.757);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.article-imgs{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    transition: all .5s;
+    cursor: zoom-in;
+}
+.article-imgs:hover{
+    width: 60%;
+    height: 90%;
+}
+.article-imgs{
+    width: 50%;
+    height: 80%;
+    margin: 50px;
+    cursor: pointer;
+    background-image: url('Logo/Academic\ Icon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.article-imgs-1{
+    animation: imgsOne 35s infinite;
+}
+.article-imgs-2{
+    animation: imgsTwo 35s infinite;
+}
+.article-imgs-3{
+    /* animation: imgsThree 35s infinite; */
+    background-image: url('Logo/Academic\ Icon.png');
+}
+.article-imgs-4{
+    animation: imgsFour 35s infinite;
+}
+.article-imgs-5{
+    animation: imgsFive 35s infinite;
+}
+@keyframes imgsOne {
+    30%{
+        background-image: url('stationaryimgs/Dr\ scripting.jpeg');
+    }
+    60%{
+        background-image: url('stationaryimgs/Login\ \(1\).jpeg');
+    }
+    90%{
+        background-image: url('stationaryimgs/too\ school\ for\ cool.jpeg');
+    }  
+}
+@keyframes imgsTwo {
+    25%{
+        background-image: url('uniformimgs/one.jpeg');
+    }
+    50%{
+        background-image: url('uniformimgs/two.jpeg');
+    }
+    75%{
+        background-image: url('uniformimgs/three.jpeg');
+    }  
+    95%{
+        background-image: url('uniformimgs/four.jpeg');
+    }  
+}
+@keyframes imgsThree {
+    30%{
+        background-image: url('');
+    }
+    60%{
+        background-image: url('');
+    }
+    90%{
+        background-image: url('');
+    }  
+}
+@keyframes imgsFive {
+    30%{
+        background-image: url('');
+    }
+    60%{
+        background-image: url('');
+    }
+    90%{
+        background-image: url('');
+    }  
+}
+@keyframes imgsFive {
+    30%{
+        background-image: url('imgs/picOne.png');
+    }
+    70%{
+        background-image: url('imgs/picTwo.jpeg');
+    }
+}
+.sec-1{
+    background-color: rgba(117, 254, 254, 0.511);
+}
+.sec-2{
+    background-color: rgba(135, 254, 117, 0.511);
+}
+.sec-3{
+    background-color: rgba(117, 128, 254, 0.511);
+}
+.sec-4{
+    background-color: rgba(254, 117, 117, 0.511);
+}
+.prices{
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.donate{
+    animation: 5s  infinite donate;
+    transition: .1s;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.donate:hover{
+    background-color: black;
+}
+.purchase:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.purchase{
+    animation: 2s 30s purchase;
+    transition: .1s;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes donate {
+    0%{
+    opacity: 50%;
+    background-color: rgb(0, 136, 255);
+    }
+}
+@keyframes purchase {
+    0%{
+    margin-left: -300px;
+    opacity: 50%;
+    color: white;
+    }
+}
+
+/* Kyu: Home Page CSS Start */
+
+
+
+
+
+
+
+
+
+
+
+/* Sanje's code */
+
+/* sign-in page */
+
+#sign-in{
+    margin-top:15%;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Page */
+
+
+.about-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border:1px solid red;
+}
+
+#about-text{
+    text-align:left;
+    letter-spacing: 1.1px;
+    /* padding */
+    border:1px solid red;
+    width: 60%;
+}
+
+.about-content.but-links{
+    list-style-type:style none; 
+}
